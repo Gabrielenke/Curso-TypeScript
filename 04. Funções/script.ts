@@ -132,8 +132,8 @@ function sumAll(...numbers: number[]) {
 	return numbers.reduce((i, total) => i + total);
 }
 
-console.log(sumAll(1, 2, 3, 4, 5));
-console.log(sumAll(4, 5, 12, 123, 1223213123132));
+console.log(sumAll(1, 2, 3, 4, 5)); // 15
+console.log(sumAll(4, 5, 12, 123, 1223213123132)); // 1223213123268
 
 // destructuring como parametro
 interface Product {
@@ -146,4 +146,4 @@ function showProductDetails({ name, price }: Product): string {
 
 const shirt = { name: "Camisa", price: 49.9 };
 
-console.log(showProductDetails(shirt));
+console.log(showProductDetails(shirt)); // O nome do produto e Camisa e o preco e R$ 49.9
